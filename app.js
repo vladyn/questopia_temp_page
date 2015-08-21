@@ -1,1 +1,1 @@
-var app = angular.module('questopia', []);
+var app = angular.module('questopia', ['720kb.background']);

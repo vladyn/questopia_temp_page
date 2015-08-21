@@ -9,24 +9,38 @@
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 	<title>Questopia - FREE YOUR MIND</title>
 	<link rel="stylesheet" href="css/html5reset-1.6.1.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300italic,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/qt_main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
 	<script src="app.js"></script>
 	<script src="controllers/AppController.js"></script>
+	<script src="directives/angular-background.min.js"></script>
 </head>
-<body ng-controller="AppController">
+<body ng-controller="AppController" dynamic-background background-image="{{'images/whisky_ice_cigar-wallpaper_large.jpg'}}" background-repeat="no-repeat" background-size="100%">
 	<header role="logo">
 		<img src="images/qt_logo_dark.svg" alt="Questopia - free your mind" class="logo">
+		<div class="lang">
+			<a href="#" ng-click="toggleLang()">{{texts.lang}}</a>
+		</div>
 	</header>
 	<main role="content">
-		<article lang="en">
-			<h1>{{headingOne}}</h1>
-			<p>A real-life escape room which will blow your mind. We are opening soon! Sofia, be ready for the challenge!</p>
+		<article lang="en" ng-show="lang==='EN'">
+			<div class="messages" ng-repeat="(property, message) in texts.en track by $index">
+				<h3 ng-if="property==='headingOne'">{{message}}</h3>
+				<h2 ng-if="property==='headingTwo'">{{message}}</h2>
+				<h1 ng-if="property==='headingThree'">{{message}}</h1>
+			</div>
 		</article>
-		<article lang="bg"></article>
+		<article lang="bg" ng-show="lang==='BG'">
+			<div class="messages" ng-repeat="(property, message) in texts.bg track by $index">
+				<h3 ng-if="property==='headingOne'">{{message}}</h3>
+				<h2 ng-if="property==='headingTwo'">{{message}}</h2>
+				<h1 ng-if="property==='headingThree'">{{message}}</h1>
+			</div>
+		</article>
 	</main>
 	<footer role="footer">
-		
+		Questopia 2015
 	</footer>
 </body>
 </html>
