@@ -3,9 +3,9 @@
 
 *  One page with info texts
 
-*  Angular
+*  [Angular](https://github.com/angular/angular.js)
 
-*  Angular dynamic background 
+*  [Angular dynamic background](https://github.com/720kb/angular-background) 
 
 *  logo
 
