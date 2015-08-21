@@ -1,0 +1,37 @@
+body {
+	background: #4a525a;
+	font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif;
+	  font: normal normal normal 14px/20px Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif;
+}
+
+.logo {
+	width: 395px;
+	height: 260px;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+h3 {
+	font-weight: 500;
+	line-height: 15.4px;
+}
+
+p {
+	font-weight: 400;
+}
+
+blockquote {
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+pre {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18.5667px;
+}

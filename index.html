@@ -1,1 +1,32 @@
-index.html
+<html ng-app="questopia">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	<title>Questopia - FREE YOUR MIND</title>
+	<link rel="stylesheet" href="css/html5reset-1.6.1.css">
+	<link rel="stylesheet" href="css/qt_main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers/AppController.js"></script>
+</head>
+<body ng-controller="AppController">
+	<header role="logo">
+		<img src="images/qt_logo_dark.svg" alt="Questopia - free your mind" class="logo">
+	</header>
+	<main role="content">
+		<article lang="en">
+			<h1>{{headingOne}}</h1>
+			<p>A real-life escape room which will blow your mind. We are opening soon! Sofia, be ready for the challenge!</p>
+		</article>
+		<article lang="bg"></article>
+	</main>
+	<footer role="footer">
+		
+	</footer>
+</body>
+</html>
