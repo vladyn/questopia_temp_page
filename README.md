@@ -10,3 +10,5 @@
 *  logo
 
 *  Image Assets
+
+View [quick Demo here](http://qt.vlado1.com/)
